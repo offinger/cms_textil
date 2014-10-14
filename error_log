@@ -1,0 +1,45 @@
+[08-Nov-2013 17:28:23 Europe/Berlin] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE in /home/tgroupco/public_html/control/protected/controllers/KolekcijeController.php on line 156
+[24-Dec-2013 18:15:36 Europe/Berlin] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE in /home/tgroupco/public_html/control/protected/controllers/KolekcijeController.php on line 227
+[24-Dec-2013 18:54:54 Europe/Berlin] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE in /home/tgroupco/public_html/control/protected/controllers/KolekcijeController.php on line 234
+[24-Dec-2013 19:05:56 Europe/Berlin] PHP Parse error:  syntax error, unexpected T_STRING, expecting ']' in /home/tgroupco/public_html/control/protected/controllers/KolekcijeController.php on line 127
+[27-Dec-2013 09:46:39 Europe/Berlin] PHP Parse error:  syntax error, unexpected T_IF in /home/tgroupco/public_html/control/protected/models/Kolekcije.php on line 65
+[28-Dec-2013 10:07:19 Europe/Berlin] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/tgroupco/public_html/control/protected/views/kolekcije/admin.php on line 42
+[28-Dec-2013 10:07:31 Europe/Berlin] PHP Fatal error:  Call to a member function getDbCriteria() on a non-object in /home/tgroupco/public_html/frameworks/framework/web/CActiveDataProvider.php on line 225
+[28-Dec-2013 10:08:07 Europe/Berlin] PHP Fatal error:  Call to a member function getDbCriteria() on a non-object in /home/tgroupco/public_html/frameworks/framework/web/CActiveDataProvider.php on line 225
+[28-Dec-2013 10:32:20 Europe/Berlin] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/tgroupco/public_html/control/protected/models/Modeli.php on line 69
+[28-Dec-2013 10:32:22 Europe/Berlin] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/tgroupco/public_html/control/protected/models/Modeli.php on line 69
+[28-Dec-2013 11:30:56 Europe/Berlin] PHP Parse error:  syntax error, unexpected T_STRING, expecting ')' in /home/tgroupco/public_html/control/protected/views/kolekcije/admin.php on line 47
+[28-Dec-2013 12:11:20 Europe/Berlin] PHP Parse error:  syntax error, unexpected ';' in /home/tgroupco/public_html/control/protected/views/modeli/admin.php on line 95
+[28-Dec-2013 12:13:05 Europe/Berlin] PHP Parse error:  syntax error, unexpected ';' in /home/tgroupco/public_html/control/protected/views/modeli/admin.php on line 95
+[28-Dec-2013 12:18:47 Europe/Berlin] PHP Parse error:  syntax error, unexpected ';' in /home/tgroupco/public_html/control/protected/views/modeli/admin.php on line 95
+[28-Dec-2013 12:31:04 Europe/Berlin] PHP Parse error:  syntax error, unexpected T_STRING, expecting ')' in /home/tgroupco/public_html/control/protected/views/modeli/admin.php on line 46
+[28-Dec-2013 12:31:09 Europe/Berlin] PHP Parse error:  syntax error, unexpected T_STRING, expecting ')' in /home/tgroupco/public_html/control/protected/views/modeli/admin.php on line 46
+[28-Dec-2013 12:31:13 Europe/Berlin] PHP Parse error:  syntax error, unexpected T_STRING, expecting ')' in /home/tgroupco/public_html/control/protected/views/modeli/admin.php on line 46
+[28-Dec-2013 12:31:16 Europe/Berlin] PHP Parse error:  syntax error, unexpected T_STRING, expecting ')' in /home/tgroupco/public_html/control/protected/views/modeli/admin.php on line 46
+[28-Dec-2013 12:31:19 Europe/Berlin] PHP Parse error:  syntax error, unexpected T_STRING, expecting ')' in /home/tgroupco/public_html/control/protected/views/modeli/admin.php on line 46
+[28-Dec-2013 12:31:48 Europe/Berlin] PHP Parse error:  syntax error, unexpected T_STRING, expecting ')' in /home/tgroupco/public_html/control/protected/views/modeli/admin.php on line 46
+[28-Dec-2013 12:35:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /home/tgroupco/public_html/frameworks/framework/base/CComponent.php(612) : eval()'d code on line 1
+[28-Dec-2013 12:35:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /home/tgroupco/public_html/frameworks/framework/base/CComponent.php(612) : eval()'d code on line 1
+[28-Dec-2013 12:35:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /home/tgroupco/public_html/frameworks/framework/base/CComponent.php(612) : eval()'d code on line 1
+[28-Dec-2013 12:35:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /home/tgroupco/public_html/frameworks/framework/base/CComponent.php(612) : eval()'d code on line 1
+[28-Dec-2013 12:35:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /home/tgroupco/public_html/frameworks/framework/base/CComponent.php(612) : eval()'d code on line 1
+[28-Dec-2013 12:35:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /home/tgroupco/public_html/frameworks/framework/base/CComponent.php(612) : eval()'d code on line 1
+[28-Dec-2013 12:35:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /home/tgroupco/public_html/frameworks/framework/base/CComponent.php(612) : eval()'d code on line 1
+[28-Dec-2013 12:35:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /home/tgroupco/public_html/frameworks/framework/base/CComponent.php(612) : eval()'d code on line 1
+[28-Dec-2013 12:35:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /home/tgroupco/public_html/frameworks/framework/base/CComponent.php(612) : eval()'d code on line 1
+[28-Dec-2013 12:35:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /home/tgroupco/public_html/frameworks/framework/base/CComponent.php(612) : eval()'d code on line 1
+[28-Dec-2013 12:35:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /home/tgroupco/public_html/frameworks/framework/base/CComponent.php(612) : eval()'d code on line 1
+[28-Dec-2013 12:35:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /home/tgroupco/public_html/frameworks/framework/base/CComponent.php(612) : eval()'d code on line 1
+[28-Dec-2013 12:35:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /home/tgroupco/public_html/frameworks/framework/base/CComponent.php(612) : eval()'d code on line 1
+[28-Dec-2013 12:35:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /home/tgroupco/public_html/frameworks/framework/base/CComponent.php(612) : eval()'d code on line 1
+[28-Dec-2013 12:35:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /home/tgroupco/public_html/frameworks/framework/base/CComponent.php(612) : eval()'d code on line 1
+[28-Dec-2013 12:35:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /home/tgroupco/public_html/frameworks/framework/base/CComponent.php(612) : eval()'d code on line 1
+[28-Dec-2013 12:35:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /home/tgroupco/public_html/frameworks/framework/base/CComponent.php(612) : eval()'d code on line 1
+[28-Dec-2013 12:35:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /home/tgroupco/public_html/frameworks/framework/base/CComponent.php(612) : eval()'d code on line 1
+[28-Dec-2013 12:35:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /home/tgroupco/public_html/frameworks/framework/base/CComponent.php(612) : eval()'d code on line 1
+[28-Dec-2013 12:35:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /home/tgroupco/public_html/frameworks/framework/base/CComponent.php(612) : eval()'d code on line 1
+[21-Jan-2014 19:41:33 Europe/Berlin] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 35936 bytes) in /home/tgroupco/public_html/control/protected/extensions/image/drivers/Image_GD_Driver.php on line 77
+[21-Jan-2014 20:14:11 Europe/Berlin] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 4656 bytes) in /home/tgroupco/public_html/control/protected/extensions/image/drivers/Image_GD_Driver.php on line 77
+[21-Jan-2014 20:14:13 Europe/Berlin] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 17420 bytes) in /home/tgroupco/public_html/control/protected/extensions/image/drivers/Image_GD_Driver.php on line 77
+[09-Mar-2014 13:47:28 Europe/Berlin] PHP Parse error:  syntax error, unexpected ',' in /home/tgroupco/public_html/control/protected/config/main.php on line 103
+[09-Mar-2014 13:47:32 Europe/Berlin] PHP Parse error:  syntax error, unexpected ',' in /home/tgroupco/public_html/control/protected/config/main.php on line 103
