@@ -14,10 +14,10 @@ class Modeli extends CActiveRecord {
 		return array(
 			array('foto', 'ext.DstImageField.DstImageValidator'),
 			array('foto_banner', 'ext.DstImageField.DstImageValidator'),
-			array('ime, status, proizvod_id', 'required', 'on' => 'create'),
+			array('ime, status, sifra_modela, proizvod_id', 'required', 'on' => 'create'),
 			array('status, views', 'numerical', 'integerOnly'=>true),
-			array('ime, foto', 'length', 'max'=>255),
-			array('id, ime, foto, status, proizvod_id, views', 'safe', 'on'=>'search'),
+			array('ime, sifra_modela, foto', 'length', 'max'=>255),
+			array('id, sifra_modela, ime, foto, status, proizvod_id, views', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -87,6 +87,7 @@ class Modeli extends CActiveRecord {
 		return array(
 			'id' => 'ID',
 			'ime' => 'Ime modela',
+			'sifra_modela' => 'Šifra modela',
 			'foto' => 'Fotografija',
 			'status' => 'Status',
 			'views' => 'Broj pregleda',
@@ -100,10 +101,11 @@ class Modeli extends CActiveRecord {
 		$criteria->compare('ime',$this->ime,true);
 		$criteria->compare('foto',$this->foto,true);
 		$criteria->compare('proizvod_id', $this->proizvod_id, true);
+		$criteria->compare('sifra_modela', $this->sifra_modela, true);
 		$criteria->compare('status',$this->status);
 		return new CActiveDataProvider($this, array(
         			'pagination' => array(
-             						'pageSize' => 20,
+             		'pageSize' => 20,
         	),
         	'criteria'=>$criteria,
 		));

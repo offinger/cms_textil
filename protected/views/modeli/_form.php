@@ -20,6 +20,9 @@
     <?php echo $form->errorSummary($model); ?>
 
             <?php echo $form->textFieldControlGroup($model,'ime',array('span'=>5,'maxlength'=>255)); ?>
+
+            <?php echo $form->textFieldControlGroup($model,'sifra_modela',array('span'=>5,'maxlength'=>255)); ?>
+
             <?php echo $form->dropDownListControlGroup($model, 'proizvod_id', $model->getProizvodiOptions()); ?>
 
             <b>Fotografija:</b> <br>

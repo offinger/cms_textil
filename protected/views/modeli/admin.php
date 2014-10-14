@@ -40,6 +40,7 @@ ili <b>=</b>) na početku Vaše pretrage kako bi ste odredili kako da pretraga b
 	'summaryText'=>'Prikazano {start} od {end} ukupno modela',
 
 	'columns'=>array(
+        'sifra_modela',
 		'ime',
 		array(
             		'name' => 'proizvod_id',

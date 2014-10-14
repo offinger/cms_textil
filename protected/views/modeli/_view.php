@@ -7,6 +7,10 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('ime')); ?>:</b>
 	<?php echo CHtml::encode($data->ime); ?>
 	<br />
+	
+	<b><?php echo CHtml::encode($data->getAttributeLabel('sifra_modela')); ?>:</b>
+	<?php echo CHtml::encode($data->sifra_modela); ?>
+	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('foto')); ?>:</b>
 	<?php echo CHtml::encode($data->foto); ?>
