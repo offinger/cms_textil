@@ -42,13 +42,16 @@ class ModeliController extends BaseFCMSController {
 
 	public function actionCreate() {
 		$model=new Modeli;
+		$modelDimenzije = new Dimenzije;
+		
 		// $this->performAjaxValidation($model);
-		if (isset($_POST['Modeli'])) {
+		if (isset($_POST['Modeli'], $_POST['Dimenzije'])) {
 			$model->attributes=$_POST['Modeli'];
 			$model->proizvod_id = $_POST['Modeli']['proizvod_id'];
-
+			
 			if ($model->save()) {
 			$model->slug = $this->slugGenerate($model->ime);
+
 
 				Yii::import('ext.DstImageField.DstImageField');
                 		$state = Yii::app()->request->getPost(DstImageField::getStateHiddenFieldName('foto'));
@@ -104,6 +107,24 @@ class ModeliController extends BaseFCMSController {
 			    $this->redirect(array('view','id'=>$model->id));
 				
 			}
+
+				// ===
+				$insert_id = Yii::app()->db->getLastInsertID();
+				$numOfFieldsInDimensionModel = 2;
+				$numOfInterations = count($_POST['Dimenzije']) / $numOfFieldsInDimensionModel;
+				for($i = 1; $i <= $numOfInterations; $i++) {
+					$modelDimenzije = new Dimenzije;
+					if($i == 1) {
+						$modelDimenzije->velicina = $_POST['Dimenzije']["velicina_1"];
+						$modelDimenzije->cena = $_POST['Dimenzije']["cena_1"];
+					} else {
+						$modelDimenzije->velicina = $_POST['Dimenzije']["velicina_" . $i];
+						$modelDimenzije->cena = $_POST['Dimenzije']["cena_" . $i];
+					} 
+					$modelDimenzije->model_id = $insert_id;
+					$modelDimenzije->save(false);
+				}
+
 				Yii::app()->user->setFlash('notification','Uspesno ste kreirali model!');
              	$this->redirect(array('modeli/admin'));
 			}
@@ -111,12 +132,17 @@ class ModeliController extends BaseFCMSController {
 
 		$this->render('create',array(
 			'model'=>$model,
+			'modelDimenzije'=>isset($modelDimenzije) ? $modelDimenzije : null,
 		));
 	}
 
 	public function actionUpdate($id) {
 
 		$model=$this->loadModel($id);
+
+		$Criteria = new CDbCriteria();
+		$Criteria->condition = "model_id = $id";
+		$modelDimenzijeUpdate = Dimenzije::model()->findAll($Criteria);
 		// $this->performAjaxValidation($model);
 		if (isset($_POST['Modeli'])) {
 
@@ -187,7 +213,7 @@ class ModeliController extends BaseFCMSController {
 		}
 
 		$this->render('update',array(
-			'model'=>$model,
+			'model'=>$model, 'modelDimenzijeUpdate'=>$modelDimenzijeUpdate
 		));
 	}
 
@@ -195,6 +221,16 @@ class ModeliController extends BaseFCMSController {
 	public function actionDelete($id) {
 		if (Yii::app()->request->isPostRequest) {
 			$this->loadModel($id)->delete();
+
+			/*Brisanje svih velicina vezanih za ovaj model*/
+			$Criteria = new CDbCriteria();
+			$Criteria->condition = "model_id = $id";
+			$modeli = Dimenzije::model()->findAll($Criteria);
+			foreach ($modeli as $model) {
+				$model->delete();
+			}
+			/*Kraj*/
+
 			if (!isset($_GET['ajax'])) {
 				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 			}

@@ -7,4 +7,4 @@ $this->breadcrumbs=array(
 ?>
 
 <h1>Izmena Modela: <?php echo $model->id; ?></h1>
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $this->renderPartial('_form', array('model'=>$model, 'modelDimenzijeUpdate'=>$modelDimenzijeUpdate)); ?>
