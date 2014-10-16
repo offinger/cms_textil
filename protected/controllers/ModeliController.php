@@ -21,7 +21,7 @@ class ModeliController extends BaseFCMSController {
 				'users'=>array('*'),
 			),
 			array('allow',
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update', 'obrisiDimenziju'),
 				'users'=>array('@'),
 			),
 			array('allow',
@@ -104,7 +104,7 @@ class ModeliController extends BaseFCMSController {
 	                    $image->resize(960, 960)->quality(80);
 	                    $image->save();
 	                    //unlink('/Applications/MAMP/htdocs/private/tgroup/clientpub/images/content-brend/' . $image_temp);
-			    $this->redirect(array('view','id'=>$model->id));
+			    // $this->redirect(array('view','id'=>$model->id));
 				
 			}
 
@@ -203,9 +203,10 @@ class ModeliController extends BaseFCMSController {
 	                    $image->resize(960, 960)->quality(80);
 	                    $image->save();
 	                    //unlink('/Applications/MAMP/htdocs/private/tgroup/clientpub/images/content-brend/' . $image_temp);
-			    $this->redirect(array('view','id'=>$model->id));
+			    // $this->redirect(array('view','id'=>$model->id));
 				
 			}
+
 				Yii::app()->user->setFlash('notification','Uspesno ste osvezili model!');
              	$this->redirect(array('modeli/admin'));
 		}
@@ -215,6 +216,20 @@ class ModeliController extends BaseFCMSController {
 		$this->render('update',array(
 			'model'=>$model, 'modelDimenzijeUpdate'=>$modelDimenzijeUpdate
 		));
+	}
+
+	public function actionObrisiDimenziju(){
+		$dimenzija = $_GET['dimenzija'];
+		$id = $_GET['id'];
+
+		$criteria = new CDbCriteria( array(
+		    'condition' => "velicina LIKE :dimenzija AND model_id = $id",
+		    'params'    => array(':dimenzija' => "%$dimenzija%")
+		) );
+		 
+		Dimenzije::model()->deleteAll($criteria);
+		
+
 	}
 
 

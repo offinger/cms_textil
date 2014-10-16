@@ -62,26 +62,26 @@
              <br />
             <!--  -->
             <?php } ?>
-
+            <div id="count">
             <?php 
             if(Yii::app()->urlManager->parseUrl(Yii::app()->request) == "modeli/update"){
 
-                $numOfInterations = count($modelDimenzijeUpdate) / 2;
-                foreach ($modelDimenzijeUpdate as $update) {
-                    for($i = 1; $i <= $numOfInterations; $i++) {
+                foreach ($modelDimenzijeUpdate as $key => $update) {   
+                    $key = $key+1;                 
                     ?>
-                     <fieldset>
-                      <legend>Dimenzija:</legend>
                        <div id="dynamicInput">
-                               <?php echo $form->textFieldControlGroup($update,'velicina' ,array('span'=>5,'maxlength'=>255, 'name'=>'Dimenzije[velicina_'.$i.']','id'=>'Dimenzije_velicina_1')); ?>
-                                <?php echo $form->textFieldControlGroup($update,'cena' ,array('span'=>5,'maxlength'=>255, 'name'=>'Dimenzije[cena_'.$i.']','id'=>'Dimenzije_cena_1')); ?>
-                         </div>
-                     </fieldset>
+                         <fieldset>
+                             <legend>Dimenzija:</legend>
+                               <?php echo $form->textFieldControlGroup($update,'velicina' ,array('span'=>5,'maxlength'=>255, 'name'=>'Dimenzije[velicina_'.$key.']','id'=>'Dimenzije_velicina_'.$key.'')); ?>
+                                <?php echo $form->textFieldControlGroup($update,'cena' ,array('span'=>5,'maxlength'=>255, 'name'=>'Dimenzije[cena_'.$key.']','id'=>'Dimenzije_cena_'.$key.'')); ?>
+                                <input value="Obrisi" type="button" onclick="obrisiDimenziju('<?php echo $update->velicina; ?>','<?php echo $model->id; ?>')">
+                         </fieldset>
+                       </div>
                      <br />
                     <?php
-                    }
                 }
                 ?>
+            </div>
                 <input type="button" value="Add another text input" onClick="addInput('dynamicInput');">
                 <?php
             }
@@ -100,9 +100,20 @@
 
 </div><!-- form -->
 <script type="text/javascript">
-var counter = 1;
-var limit = 5;
-function addInput(divName){
+<?php 
+    if(Yii::app()->urlManager->parseUrl(Yii::app()->request) == "modeli/update"){
+    ?>
+        var top_level_div = document.getElementById('count');
+        var count = top_level_div.getElementsByTagName('div').length;
+        var counter = count/5;
+    <?php 
+    } else {
+    ?>
+        var counter = 1;
+    <?php }
+?>
+    var limit = 10;
+    function addInput(divName){
      if (counter == limit)  {
           alert("You have reached the limit of adding " + counter + " inputs");
      }
@@ -112,5 +123,19 @@ function addInput(divName){
           document.getElementById(divName).appendChild(newdiv);
           counter++;
      }
+}
+</script>
+<script type="text/javascript">
+function obrisiDimenziju(dimenzija, id) {
+
+   $.ajax({
+     type: "GET",
+     url: '/modeli/obrisiDimenziju?dimenzija='+dimenzija+'&id='+id,
+     success: function(data) {
+
+          $('#favorite-'+favorit).html(data);
+          $('.glyphicon-star').css("color","yellow");
+     }
+   });
 }
 </script>
