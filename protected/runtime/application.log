@@ -6166,3 +6166,2472 @@ Stack trace:
 REQUEST_URI=/control/img/made_on_mac.png
 HTTP_REFERER=http://cms.local:8888/modeli/update/182
 ---
+2014/10/17 09:35:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in C:\xampp\htdocs\dbrain\frameworks\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\dbrain\frameworks\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\dbrain\frameworks\framework\db\ar\CActiveRecord.php(637): CApplication->getDb()
+#5 C:\xampp\htdocs\dbrain\frameworks\framework\db\ar\CActiveRecord.php(1431): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\dbrain\frameworks\framework\db\ar\CActiveRecord.php(1487): CActiveRecord->getTableAlias(true)
+#7 C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php(277): CActiveRecord->findByPk('180')
+#8 C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php(141): ModeliController->loadModel('180')
+#9 [internal function]: ModeliController->actionUpdate('180')
+#10 C:\xampp\htdocs\dbrain\frameworks\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ModeliController), Array)
+#11 C:\xampp\htdocs\dbrain\frameworks\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ModeliController), Object(ReflectionMethod), Array)
+#12 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\dbrain\frameworks\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\dbrain\frameworks\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\dbrain\frameworks\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\dbrain\frameworks\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(282): CController->run('update')
+#21 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('modeli/update')
+#22 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#24 {main}
+REQUEST_URI=/modeli/update/180
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 09:36:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 09:36:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 09:36:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 09:36:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 09:36:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 09:36:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 09:36:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 09:36:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 09:56:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/site/index
+---
+2014/10/17 09:56:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/site/index
+---
+2014/10/17 09:56:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 09:56:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 10:19:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:19:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:19:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:19:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:25:41 [error] [php] Undefined variable: key_ (C:\xampp\htdocs\dbrain\cms\protected\views\modeli\_form.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(869): ModeliController->renderFile()
+#1 C:\xampp\htdocs\dbrain\cms\protected\views\modeli\update.php(10): ModeliController->renderPartial()
+#2 C:\xampp\htdocs\dbrain\frameworks\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\dbrain\frameworks\framework\web\CBaseController.php(95): ModeliController->renderInternal()
+#4 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(869): ModeliController->renderFile()
+#5 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(782): ModeliController->renderPartial()
+#6 C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php(218): ModeliController->render()
+#7 unknown(0): ModeliController->actionUpdate()
+#8 C:\xampp\htdocs\dbrain\frameworks\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\xampp\htdocs\dbrain\frameworks\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\dbrain\frameworks\framework\web\filters\CFilterChain.php(133): ModeliController->runAction()
+#12 C:\xampp\htdocs\dbrain\frameworks\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\xampp\htdocs\dbrain\frameworks\framework\web\filters\CInlineFilter.php(58): ModeliController->filterAccessControl()
+#15 C:\xampp\htdocs\dbrain\frameworks\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(265): ModeliController->runActionWithFilters()
+#18 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(282): ModeliController->run()
+#19 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\dbrain\cms\index.php(33): CWebApplication->run()
+REQUEST_URI=/modeli/update/180
+in C:\xampp\htdocs\dbrain\cms\protected\views\modeli\_form.php (73)
+in C:\xampp\htdocs\dbrain\cms\protected\views\modeli\update.php (10)
+in C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php (218)
+2014/10/17 10:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:26:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:26:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:26:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:26:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:27:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:27:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:27:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:27:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:39:28 [error] [exception.CException] exception 'CException' with message 'Property "Dimenzije.velicinaj" is not defined.' in C:\xampp\htdocs\dbrain\frameworks\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\db\ar\CActiveRecord.php(145): CComponent->__get('velicinaj')
+#1 C:\xampp\htdocs\dbrain\cms\protected\views\modeli\_form.php(73): CActiveRecord->__get('velicinaj')
+#2 C:\xampp\htdocs\dbrain\frameworks\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\dbrain\frameworks\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\dbrain\cms\protected\views\modeli\update.php(10): CController->renderPartial('_form', Array)
+#6 C:\xampp\htdocs\dbrain\frameworks\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\dbrain\frameworks\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#10 C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php(218): CController->render('update', Array)
+#11 [internal function]: ModeliController->actionUpdate('180')
+#12 C:\xampp\htdocs\dbrain\frameworks\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ModeliController), Array)
+#13 C:\xampp\htdocs\dbrain\frameworks\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ModeliController), Object(ReflectionMethod), Array)
+#14 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\dbrain\frameworks\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\dbrain\frameworks\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\dbrain\frameworks\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\htdocs\dbrain\frameworks\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(282): CController->run('update')
+#23 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('modeli/update')
+#24 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#26 {main}
+REQUEST_URI=/modeli/update/180
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 10:39:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:39:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:39:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:39:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:42:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:42:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:42:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:42:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:42:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:42:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:42:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:42:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:43:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:43:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:43:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:43:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:44:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:44:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:44:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:44:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:46:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:46:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:46:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:46:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:49:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:49:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:49:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:49:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:49:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:49:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:49:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 10:49:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:07:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:07:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:07:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:07:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:08:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:08:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:08:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:08:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:08:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:08:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:08:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:08:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:08:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 11:08:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 11:08:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/178
+---
+2014/10/17 11:08:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/178
+---
+2014/10/17 11:08:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/178
+---
+2014/10/17 11:08:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/178
+---
+2014/10/17 11:08:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/178
+---
+2014/10/17 11:08:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/178
+---
+2014/10/17 11:08:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/178
+---
+2014/10/17 11:08:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/178
+---
+2014/10/17 11:08:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/178
+---
+2014/10/17 11:08:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/178
+---
+2014/10/17 11:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/178
+---
+2014/10/17 11:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/178
+---
+2014/10/17 11:09:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 11:09:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 11:10:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:10:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:10:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:10:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:10:21 [warning] [application] Failed to set unsafe attribute "proizvod_id" of "Modeli".
+in C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php (152)
+in C:\xampp\htdocs\dbrain\cms\index.php (33)
+2014/10/17 11:10:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 11:10:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 11:10:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:10:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:10:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:10:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:12:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:12:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:12:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:12:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:12:17 [warning] [application] Failed to set unsafe attribute "proizvod_id" of "Modeli".
+in C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php (152)
+in C:\xampp\htdocs\dbrain\cms\index.php (33)
+2014/10/17 11:12:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 11:12:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 11:12:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:12:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:12:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:12:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:13:31 [warning] [application] Failed to set unsafe attribute "proizvod_id" of "Modeli".
+in C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php (152)
+in C:\xampp\htdocs\dbrain\cms\index.php (33)
+2014/10/17 11:13:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 11:13:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 11:13:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:13:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:13:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:13:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 11:13:39 [warning] [application] Failed to set unsafe attribute "proizvod_id" of "Modeli".
+in C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php (152)
+in C:\xampp\htdocs\dbrain\cms\index.php (33)
+2014/10/17 11:13:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 11:13:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 14:29:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/create
+---
+2014/10/17 14:29:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/create
+---
+2014/10/17 14:29:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/create
+---
+2014/10/17 14:29:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/create
+---
+2014/10/17 14:29:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 14:29:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 14:29:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:29:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:29:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:29:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:31:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:31:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:31:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:31:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:32:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:32:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:32:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:32:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:33:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:33:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:33:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:33:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:36:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:36:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:36:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:36:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:43:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:43:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:43:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:43:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:43:31 [warning] [application] Failed to set unsafe attribute "proizvod_id" of "Modeli".
+in C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php (147)
+in C:\xampp\htdocs\dbrain\cms\index.php (33)
+2014/10/17 14:43:32 [error] [php] Undefined variable: insert_id (C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php:217)
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\dbrain\frameworks\framework\web\filters\CFilterChain.php(133): ModeliController->runAction()
+#3 C:\xampp\htdocs\dbrain\frameworks\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\dbrain\frameworks\framework\web\filters\CInlineFilter.php(58): ModeliController->filterAccessControl()
+#6 C:\xampp\htdocs\dbrain\frameworks\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(265): ModeliController->runActionWithFilters()
+#9 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(282): ModeliController->run()
+#10 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\dbrain\cms\index.php(33): CWebApplication->run()
+REQUEST_URI=/modeli/update/180
+in C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php (217)
+in C:\xampp\htdocs\dbrain\cms\index.php (33)
+2014/10/17 14:43:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:43:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:44:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:44:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:44:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:44:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:45:11 [warning] [application] Failed to set unsafe attribute "proizvod_id" of "Modeli".
+in C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php (147)
+in C:\xampp\htdocs\dbrain\cms\index.php (33)
+2014/10/17 14:45:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 14:45:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 14:45:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:45:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:45:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:45:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:45:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:45:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:45:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:45:55 [warning] [application] Failed to set unsafe attribute "proizvod_id" of "Modeli".
+in C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php (147)
+in C:\xampp\htdocs\dbrain\cms\index.php (33)
+2014/10/17 14:45:56 [error] [php] Undefined index: id_2 (C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php:212)
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\dbrain\frameworks\framework\web\filters\CFilterChain.php(133): ModeliController->runAction()
+#3 C:\xampp\htdocs\dbrain\frameworks\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\dbrain\frameworks\framework\web\filters\CInlineFilter.php(58): ModeliController->filterAccessControl()
+#6 C:\xampp\htdocs\dbrain\frameworks\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\dbrain\frameworks\framework\web\CController.php(265): ModeliController->runActionWithFilters()
+#9 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(282): ModeliController->run()
+#10 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\dbrain\cms\index.php(33): CWebApplication->run()
+REQUEST_URI=/modeli/update/180
+in C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php (212)
+in C:\xampp\htdocs\dbrain\cms\index.php (33)
+2014/10/17 14:45:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:45:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:46:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:46:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:46:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:46:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:46:27 [warning] [application] Failed to set unsafe attribute "proizvod_id" of "Modeli".
+in C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php (147)
+in C:\xampp\htdocs\dbrain\cms\index.php (33)
+2014/10/17 14:46:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 14:46:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 14:46:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:46:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:46:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:46:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:46:46 [warning] [application] Failed to set unsafe attribute "proizvod_id" of "Modeli".
+in C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php (147)
+in C:\xampp\htdocs\dbrain\cms\index.php (33)
+2014/10/17 14:46:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 14:46:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:46:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:46:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:46:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:49:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:49:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:49:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:49:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:50:34 [warning] [application] Failed to set unsafe attribute "proizvod_id" of "Modeli".
+in C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php (147)
+in C:\xampp\htdocs\dbrain\cms\index.php (33)
+2014/10/17 14:50:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 14:50:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 14:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:51:24 [warning] [application] Failed to set unsafe attribute "proizvod_id" of "Modeli".
+in C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php (147)
+in C:\xampp\htdocs\dbrain\cms\index.php (33)
+2014/10/17 14:51:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 14:51:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 14:51:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:51:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:51:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:51:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:51:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:51:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:51:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:51:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:52:13 [warning] [application] Failed to set unsafe attribute "proizvod_id" of "Modeli".
+in C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php (147)
+in C:\xampp\htdocs\dbrain\cms\index.php (33)
+2014/10/17 14:52:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 14:52:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:52:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:52:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:52:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:52:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:52:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:52:45 [warning] [application] Failed to set unsafe attribute "proizvod_id" of "Modeli".
+in C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php (147)
+in C:\xampp\htdocs\dbrain\cms\index.php (33)
+2014/10/17 14:52:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 14:52:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 14:52:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:52:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:52:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:52:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/180
+---
+2014/10/17 14:52:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/create
+---
+2014/10/17 14:52:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/create
+---
+2014/10/17 14:52:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/create
+---
+2014/10/17 14:52:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/create
+---
+2014/10/17 14:53:19 [warning] [application] Failed to set unsafe attribute "proizvod_id" of "Modeli".
+in C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php (49)
+in C:\xampp\htdocs\dbrain\cms\index.php (33)
+2014/10/17 14:53:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 14:53:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 14:53:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/181
+---
+2014/10/17 14:53:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/181
+---
+2014/10/17 14:53:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/181
+---
+2014/10/17 14:53:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/181
+---
+2014/10/17 14:53:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/create
+---
+2014/10/17 14:53:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/create
+---
+2014/10/17 14:53:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/create
+---
+2014/10/17 14:55:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/create
+---
+2014/10/17 14:55:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/create
+---
+2014/10/17 14:55:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/create
+---
+2014/10/17 14:55:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/create
+---
+2014/10/17 14:55:51 [warning] [application] Failed to set unsafe attribute "proizvod_id" of "Modeli".
+in C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php (49)
+in C:\xampp\htdocs\dbrain\cms\index.php (33)
+2014/10/17 14:55:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 14:55:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/182
+---
+2014/10/17 14:55:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/182
+---
+2014/10/17 15:08:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 15:08:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 15:08:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/create
+---
+2014/10/17 15:08:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/create
+---
+2014/10/17 15:08:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/create
+---
+2014/10/17 15:08:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/create
+---
+2014/10/17 15:08:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 15:08:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 15:09:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/182
+---
+2014/10/17 15:09:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/182
+---
+2014/10/17 15:09:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/182
+---
+2014/10/17 15:09:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/182
+---
+2014/10/17 15:09:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/182
+---
+2014/10/17 15:09:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/182
+---
+2014/10/17 15:09:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/182
+---
+2014/10/17 15:09:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/182
+---
+2014/10/17 16:23:05 [warning] [application] Failed to set unsafe attribute "proizvod_id" of "Modeli".
+in C:\xampp\htdocs\dbrain\cms\protected\controllers\ModeliController.php (147)
+in C:\xampp\htdocs\dbrain\cms\index.php (33)
+2014/10/17 16:23:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 16:23:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/admin
+---
+2014/10/17 16:23:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/182
+---
+2014/10/17 16:23:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/182
+---
+2014/10/17 16:23:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/images/content-modeli".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('clientpub/image...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/images/content-modeli/
+HTTP_REFERER=http://cms.local/modeli/update/182
+---
+2014/10/17 16:23:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\dbrain\frameworks\framework\web\CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 C:\xampp\htdocs\dbrain\frameworks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dbrain\cms\index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local/modeli/update/182
+---

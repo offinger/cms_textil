@@ -52,6 +52,9 @@
             <!-- Dimenzije -->
             <br />
              <fieldset>
+              <?php
+                echo $form->hiddenField($modelDimenzije,'id', array('name'=>'Dimenzije[id_1]','id'=>'Dimenzije_id_1'));
+              ?>
               <legend>Dimenzija:</legend>
                <div id="dynamicInput">
                        <?php echo $form->textFieldControlGroup($modelDimenzije,'velicina',array('span'=>5,'maxlength'=>255,'name'=>'Dimenzije[velicina_1]','id'=>'Dimenzije_velicina_1')); ?>
@@ -70,11 +73,14 @@
                     $key = $key+1;                 
                     ?>
                        <div id="dynamicInput">
-                         <fieldset>
+                         <fieldset id="<?php echo $key.'_'.$update->velicina; ?>">
+                            <?php
+                            echo $form->hiddenField($update,'id', array('name'=>'Dimenzije[id_'.$key.']','id'=>'Dimenzije_id_'.$key.''));
+                            ?>
                              <legend>Dimenzija:</legend>
                                <?php echo $form->textFieldControlGroup($update,'velicina' ,array('span'=>5,'maxlength'=>255, 'name'=>'Dimenzije[velicina_'.$key.']','id'=>'Dimenzije_velicina_'.$key.'')); ?>
                                 <?php echo $form->textFieldControlGroup($update,'cena' ,array('span'=>5,'maxlength'=>255, 'name'=>'Dimenzije[cena_'.$key.']','id'=>'Dimenzije_cena_'.$key.'')); ?>
-                                <input value="Obrisi" type="button" onclick="obrisiDimenziju('<?php echo $update->velicina; ?>','<?php echo $model->id; ?>')">
+                                <input value="Obrisi" type="button" onclick="if(confirm('Obrisi dimenziju?')) obrisiDimenziju('<?php echo $update->velicina; ?>','<?php echo $model->id; ?>','<?php echo $key; ?>')">
                          </fieldset>
                        </div>
                      <br />
@@ -119,22 +125,23 @@
      }
      else {
           var newdiv = document.createElement('div');
-          newdiv.innerHTML = "<fieldset><legend>Dimenzija:</legend><label class='control-label required' for='Dimenzije_velicina'>Velicina <span class='required'>*</span></label>" + (counter + 1) + " <br><input name='Dimenzije[velicina_" + (counter + 1) + "]' maxlength='255' id='Dimenzije_velicina_" + (counter + 1) + "' class='span5' type='text'><br><label class='control-label required' for='Dimenzije_velicina'>Cena <span class='required'>*</span></label>" + (counter + 1) + "<br><input name='Dimenzije[cena_" + (counter + 1) + "]' maxlength='255' id='Dimenzije_cena_jk" + (counter + 1) + "' class='span5' type='text'></fieldset>";
+          newdiv.innerHTML = "<input id='Dimenzije_id_" + (counter + 1) + "' type='hidden' value='' name='Dimenzije[id_" + (counter + 1) + "]'><fieldset><legend>Dimenzija:</legend><label class='control-label required' for='Dimenzije_velicina'>Velicina <span class='required'>*</span></label>" + (counter + 1) + " <br><input name='Dimenzije[velicina_" + (counter + 1) + "]' maxlength='255' id='Dimenzije_velicina_" + (counter + 1) + "' class='span5' type='text'><br><label class='control-label required' for='Dimenzije_velicina'>Cena <span class='required'>*</span></label>" + (counter + 1) + "<br><input name='Dimenzije[cena_" + (counter + 1) + "]' maxlength='255' id='Dimenzije_cena_jk" + (counter + 1) + "' class='span5' type='text'></fieldset>";
           document.getElementById(divName).appendChild(newdiv);
           counter++;
      }
 }
 </script>
 <script type="text/javascript">
-function obrisiDimenziju(dimenzija, id) {
+function obrisiDimenziju(dimenzija, id, key) {
 
    $.ajax({
      type: "GET",
      url: '/modeli/obrisiDimenziju?dimenzija='+dimenzija+'&id='+id,
      success: function(data) {
 
-          $('#favorite-'+favorit).html(data);
-          $('.glyphicon-star').css("color","yellow");
+            // alert('#'+key+'_'+dimenzija);
+          $('#'+key+'_'+dimenzija).remove();
+          location.reload(); 
      }
    });
 }

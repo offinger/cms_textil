@@ -106,7 +106,7 @@ return array(
             'connectionString' => 'mysql:host=localhost;dbname=cms',
             'emulatePrepare' => true,
             'username' => 'root',
-            'password' => 'root',
+            'password' => '',
             'charset' => 'utf8',
         ),
 

@@ -110,17 +110,12 @@ class ModeliController extends BaseFCMSController {
 
 				// ===
 				$insert_id = Yii::app()->db->getLastInsertID();
-				$numOfFieldsInDimensionModel = 2;
+				$numOfFieldsInDimensionModel = 3;
 				$numOfInterations = count($_POST['Dimenzije']) / $numOfFieldsInDimensionModel;
 				for($i = 1; $i <= $numOfInterations; $i++) {
 					$modelDimenzije = new Dimenzije;
-					if($i == 1) {
-						$modelDimenzije->velicina = $_POST['Dimenzije']["velicina_1"];
-						$modelDimenzije->cena = $_POST['Dimenzije']["cena_1"];
-					} else {
-						$modelDimenzije->velicina = $_POST['Dimenzije']["velicina_" . $i];
-						$modelDimenzije->cena = $_POST['Dimenzije']["cena_" . $i];
-					} 
+					$modelDimenzije->velicina = $_POST['Dimenzije']["velicina_" . $i];
+					$modelDimenzije->cena = $_POST['Dimenzije']["cena_" . $i];
 					$modelDimenzije->model_id = $insert_id;
 					$modelDimenzije->save(false);
 				}
@@ -143,6 +138,8 @@ class ModeliController extends BaseFCMSController {
 		$Criteria = new CDbCriteria();
 		$Criteria->condition = "model_id = $id";
 		$modelDimenzijeUpdate = Dimenzije::model()->findAll($Criteria);
+
+		// var_dump($_POST);die;
 		// $this->performAjaxValidation($model);
 		if (isset($_POST['Modeli'])) {
 
@@ -206,6 +203,21 @@ class ModeliController extends BaseFCMSController {
 			    // $this->redirect(array('view','id'=>$model->id));
 				
 			}
+
+			// ===
+			$numOfFieldsInDimensionModel = 3;
+			$numOfInterations = count($_POST['Dimenzije']) / $numOfFieldsInDimensionModel;
+			for($i = 1; $i <= $numOfInterations; $i++) {
+				$modelDimenzije = new Dimenzije;
+				if($_POST['Dimenzije']["id_" . $i]) {
+					$modelDimenzije = $modelDimenzije->findByPk($_POST['Dimenzije']["id_" . $i]);
+				}
+				$modelDimenzije->velicina = $_POST['Dimenzije']["velicina_" . $i];
+				$modelDimenzije->cena = $_POST['Dimenzije']["cena_" . $i];
+				$modelDimenzije->model_id = $id;
+				$modelDimenzije->save(false);
+			}
+
 
 				Yii::app()->user->setFlash('notification','Uspesno ste osvezili model!');
              	$this->redirect(array('modeli/admin'));
