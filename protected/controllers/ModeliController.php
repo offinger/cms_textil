@@ -52,6 +52,18 @@ class ModeliController extends BaseFCMSController {
 			if ($model->save()) {
 			$model->slug = $this->slugGenerate($model->ime);
 
+				$insert_id = Yii::app()->db->getLastInsertID();
+				// var_dump($insert_id);die;
+				$numOfFieldsInDimensionModel = 3;
+				$numOfInterations = count($_POST['Dimenzije']) / $numOfFieldsInDimensionModel;
+				for($i = 1; $i <= $numOfInterations; $i++) {
+					$modelDimenzije = new Dimenzije;
+					$modelDimenzije->velicina = $_POST['Dimenzije']["velicina_" . $i];
+					$modelDimenzije->cena = $_POST['Dimenzije']["cena_" . $i];
+					$modelDimenzije->model_id = $insert_id;
+					$modelDimenzije->save(false);
+				}
+
 
 				Yii::import('ext.DstImageField.DstImageField');
                 		$state = Yii::app()->request->getPost(DstImageField::getStateHiddenFieldName('foto'));
@@ -62,7 +74,7 @@ class ModeliController extends BaseFCMSController {
 	
 	                    $new_image_subpath = uniqid(rand (),true) . '.' . $new_image_ext;
 	                    $new_image_subpath = substr($new_image_subpath, 0, 1) . '/' . substr($new_image_subpath, 1, 1) . '/' . $new_image_subpath;
-	                    $new_image_path = '/home/tgroupco/public_html/clientpub/images/content-modeli/' . $new_image_subpath;
+	                    $new_image_path = '../cms/clientpub/cms/images/modeli/' . $new_image_subpath;
 	                    if(!file_exists(dirname($new_image_path))) {
 	                        mkdir(dirname($new_image_path), 0777, true);
 	                    }
@@ -89,7 +101,7 @@ class ModeliController extends BaseFCMSController {
 	
 	                    $new_image_subpath = uniqid(rand (),true) . '.' . $new_image_ext;
 	                    $new_image_subpath = substr($new_image_subpath, 0, 1) . '/' . substr($new_image_subpath, 1, 1) . '/' . $new_image_subpath;
-	                    $new_image_path = '/home/tgroupco/public_html/clientpub/images/content-modeli/' . $new_image_subpath;
+	                    $new_image_path = '../cms/clientpub/cms/images/modeli/' . $new_image_subpath;
 	                    if(!file_exists(dirname($new_image_path))) {
 	                        mkdir(dirname($new_image_path), 0777, true);
 	                    }
@@ -106,20 +118,7 @@ class ModeliController extends BaseFCMSController {
 	                    //unlink('/Applications/MAMP/htdocs/private/tgroup/clientpub/images/content-brend/' . $image_temp);
 			    // $this->redirect(array('view','id'=>$model->id));
 				
-			}
-
-				// ===
-				$insert_id = Yii::app()->db->getLastInsertID();
-				$numOfFieldsInDimensionModel = 3;
-				$numOfInterations = count($_POST['Dimenzije']) / $numOfFieldsInDimensionModel;
-				for($i = 1; $i <= $numOfInterations; $i++) {
-					$modelDimenzije = new Dimenzije;
-					$modelDimenzije->velicina = $_POST['Dimenzije']["velicina_" . $i];
-					$modelDimenzije->cena = $_POST['Dimenzije']["cena_" . $i];
-					$modelDimenzije->model_id = $insert_id;
-					$modelDimenzije->save(false);
-				}
-
+			 }
 				Yii::app()->user->setFlash('notification','Uspesno ste kreirali model!');
              	$this->redirect(array('modeli/admin'));
 			}
@@ -134,6 +133,8 @@ class ModeliController extends BaseFCMSController {
 	public function actionUpdate($id) {
 
 		$model=$this->loadModel($id);
+		$oldImage = $model->foto;
+		$oldImage2 = $model->foto_banner;
 
 		$Criteria = new CDbCriteria();
 		$Criteria->condition = "model_id = $id";
@@ -153,12 +154,13 @@ class ModeliController extends BaseFCMSController {
                 		$state = Yii::app()->request->getPost(DstImageField::getStateHiddenFieldName('foto'));
                 		$state_1 = Yii::app()->request->getPost(DstImageField::getStateHiddenFieldName('foto_banner'));
 	                if($state == DstImageField::STATE_CHOSEN) {
+	                	unlink('../cms/clientpub/cms/images/modeli/' . $oldImage);
 	                    $image_temp = CUploadedFile::getInstanceByName(DstImageField::getFileFieldName('foto'));
 	                    $new_image_ext = pathinfo($image_temp, PATHINFO_EXTENSION);
 	
 	                    $new_image_subpath = uniqid(rand (),true) . '.' . $new_image_ext;
 	                    $new_image_subpath = substr($new_image_subpath, 0, 1) . '/' . substr($new_image_subpath, 1, 1) . '/' . $new_image_subpath;
-	                    $new_image_path = '/home/tgroupco/public_html/clientpub/images/content-modeli/' . $new_image_subpath;
+	                    $new_image_path = '../cms/clientpub/cms/images/modeli/' . $new_image_subpath;
 	                    if(!file_exists(dirname($new_image_path))) {
 	                        mkdir(dirname($new_image_path), 0777, true);
 	                    }
@@ -180,12 +182,13 @@ class ModeliController extends BaseFCMSController {
 			
 			////
 			 if($state_1 == DstImageField::STATE_CHOSEN) {
+			 			unlink('../cms/clientpub/cms/images/modeli/' . $oldImage2);
 	                    $image_temp = CUploadedFile::getInstanceByName(DstImageField::getFileFieldName('foto_banner'));
 	                    $new_image_ext = pathinfo($image_temp, PATHINFO_EXTENSION);
 	
 	                    $new_image_subpath = uniqid(rand (),true) . '.' . $new_image_ext;
 	                    $new_image_subpath = substr($new_image_subpath, 0, 1) . '/' . substr($new_image_subpath, 1, 1) . '/' . $new_image_subpath;
-	                    $new_image_path = '/home/tgroupco/public_html/clientpub/images/content-modeli/' . $new_image_subpath;
+	                    $new_image_path = '../cms/clientpub/cms/images/modeli/' . $new_image_subpath;
 	                    if(!file_exists(dirname($new_image_path))) {
 	                        mkdir(dirname($new_image_path), 0777, true);
 	                    }

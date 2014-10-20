@@ -54,7 +54,7 @@ ili <b>=</b>) na početku Vaše pretrage kako bi ste odredili kako da pretraga b
                     'label'=>'Izmeni',
                     'url'=>'Yii::app()->createUrl("proizvodi/update", array("id"=>$data->id))',
                     'options'=>array(
-                        'class'=>'btn btn-small btn-success',
+                        'class'=>'btn btn-small btn-success glyphicon glyphicon-pencil',
                     ),
                 ),
                 'delete' => array
@@ -62,7 +62,7 @@ ili <b>=</b>) na početku Vaše pretrage kako bi ste odredili kako da pretraga b
                     'label'=>'Obrisi',
                     'url'=>'Yii::app()->createUrl("proizvodi/delete", array("id"=>$data->id))',
                     'options'=>array(
-                        'class'=>'btn btn-small btn-danger',
+                        'class'=>'btn btn-small btn-danger glyphicon glyphicon-remove',
                     ),
                 ),
 

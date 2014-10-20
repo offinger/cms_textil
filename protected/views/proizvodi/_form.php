@@ -10,8 +10,7 @@
     <p class="help-block">Polja sa <span class="required">*</span> su obavezna.</p>
     <?php 
 
-    //$putanja = "/Applications/MAMP/htdocs/private/tgroup/clientpub/images/content-proizvod/";
-     $putanja = "/clientpub/images/content-proizvod/";
+     $putanja = "/clientpub/cms/images/proizvodi/";
 
     ?>
     <?php echo $form->errorSummary($model); ?>
@@ -32,8 +31,8 @@
                                 'model'=>$model,
                                 'attribute'=>'foto_modal',
                                 'absolute_path' => $putanja, // absolute path where images are stored
-                                'preview_width' => '160', // optional attribute - default 160
-                                'preview_height' => '120' // optional attribute - default 120
+                                'preview_width' => '320', // optional attribute - default 160
+                                'preview_height' => '200' // optional attribute - default 120
                 ));
             ?>
 

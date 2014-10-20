@@ -49,8 +49,8 @@ class Proizvodi extends CActiveRecord {
         $state = Yii::app()->request->getPost(DstImageField::getStateHiddenFieldName('foto'));
         if($state == DstImageField::STATE_CHOSEN) {
             $image_path = CUploadedFile::getInstanceByName(DstImageField::getFileFieldName('foto'));
-            $image_path->saveAs('/home/tgroupco/public_html/clientpub/images/content-proizvod/' . $image_path, false);
-            $image = Yii::app()->image->load('/home/tgroupco/public_html/clientpub/images/content-proizvod/' . $image_path);
+            $image_path->saveAs('../cms/clientpub/cms/images/proizvodi/' . $image_path, false);
+            $image = Yii::app()->image->load('../cms/clientpub/cms/images/proizvodi/' . $image_path);
             $image->resize(532, 324)->quality(80);
             $image->save();  
         }
@@ -58,8 +58,8 @@ class Proizvodi extends CActiveRecord {
         $state_1 = Yii::app()->request->getPost(DstImageField::getStateHiddenFieldName('foto_modal'));
         if($state_1 == DstImageField::STATE_CHOSEN) {
             $image_path_1 = CUploadedFile::getInstanceByName(DstImageField::getFileFieldName('foto_modal'));
-            $image_path_1->saveAs('/home/tgroupco/public_html/clientpub/images/content-proizvod/' . $image_path_1, false);
-            $image_1 = Yii::app()->image->load('/home/tgroupco/public_html/clientpub/images/content-proizvod/' . $image_path_1);
+            $image_path_1->saveAs('../cms/clientpub/cms/images/proizvodi/' . $image_path_1, false);
+            $image_1 = Yii::app()->image->load('../cms/clientpub/cms/images/proizvodi/' . $image_path_1);
             $image_1->resize(532, 324)->quality(80);
             $image_1->save();  
         }
@@ -72,9 +72,10 @@ class Proizvodi extends CActiveRecord {
     
     protected function deleteImageFiles() {
     
-    	$fileNameToDelete = '/home/tgroupco/public_html/clientpub/images/content-proizvod/'.$this->foto;
+    	$fileNameToDelete = '../cms/clientpub/cms/images/proizvodi/'.$this->foto;
         if(file_exists($fileNameToDelete)) {
-        unlink('/home/tgroupco/public_html/clientpub/images/content-proizvod/'. $this->foto);
+        	unlink('../cms/clientpub/cms/images/proizvodi/'. $this->foto);
+        	unlink('../cms/clientpub/cms/images/proizvodi/'. $this->foto_modal);
         return true;
         } else {
         return true;

@@ -28,11 +28,13 @@ class SiteController extends Controller {
         $brojBrendova = Brendovi::model()->count();
         $brojModela = Modeli::model()->count();
         $brojKolekcija = Kolekcije::model()->count();
+        $brojProizvoda = Proizvodi::model()->count();
 
         $this->render('index_'.app()->layout, array(
                                                     'brojBrendova' => $brojBrendova, 
                                                     'brojModela' => $brojModela, 
-                                                    'brojKolekcija' => $brojKolekcija
+                                                    'brojKolekcija' => $brojKolekcija,
+                                                    'brojProizvoda' => $brojProizvoda,
         ));
 
         }

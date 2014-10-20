@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">TGroupCo @ <b>fCMS</b></a>
+                <a class="navbar-brand" href="#">Paleta <b>CMS</b></a>
             </div>
             <div class="navbar-collapse collapse">
                 <?php 
@@ -137,7 +137,7 @@
         <?php echo $content; ?>
         <hr>
         <footer>
-            <p style="width:500px; float:left;">&copy; TGroupCo , <?php echo date('Y'); ?> // Pokreće: <b style='color:blue;'>fCMS</b>
+            <p style="width:500px; float:left;">&copy; Paleta , <?php echo date('Y'); ?> // Pokreće: <b style='color:blue;'>fmtrx</b>
             <span style='color:gray; font-size:11px;'>Strana generisana u: <?php echo(number_format(microtime(true) - $start_time, 2)); ?> sekundi.</span>
             </p>
             <img style="float:right;" src="/control/img/made_on_mac.png"> </img>

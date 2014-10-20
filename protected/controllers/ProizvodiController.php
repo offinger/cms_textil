@@ -55,7 +55,7 @@ class ProizvodiController extends BaseFCMSController {
 	
 	                    $new_image_subpath = uniqid(rand (),true) . '.' . $new_image_ext;
 	                    $new_image_subpath = substr($new_image_subpath, 0, 1) . '/' . substr($new_image_subpath, 1, 1) . '/' . $new_image_subpath;
-	                    $new_image_path = '/home/tgroupco/public_html/clientpub/images/content-proizvod/' . $new_image_subpath;
+	                    $new_image_path = '../cms/clientpub/cms/images/proizvodi/' . $new_image_subpath;
 	                    if(!file_exists(dirname($new_image_path))) {
 	                        mkdir(dirname($new_image_path), 0777, true);
 	                    }
@@ -82,7 +82,7 @@ class ProizvodiController extends BaseFCMSController {
 	
 	                    $new_image_subpath = uniqid(rand (),true) . '.' . $new_image_ext;
 	                    $new_image_subpath = substr($new_image_subpath, 0, 1) . '/' . substr($new_image_subpath, 1, 1) . '/' . $new_image_subpath;
-	                    $new_image_path = '/home/tgroupco/public_html/clientpub/images/content-proizvod/' . $new_image_subpath;
+	                    $new_image_path = '../cms/clientpub/cms/images/proizvodi/' . $new_image_subpath;
 	                    if(!file_exists(dirname($new_image_path))) {
 	                        mkdir(dirname($new_image_path), 0777, true);
 	                    }
@@ -127,7 +127,7 @@ class ProizvodiController extends BaseFCMSController {
 	
 	                    $new_image_subpath = uniqid(rand (),true) . '.' . $new_image_ext;
 	                    $new_image_subpath = substr($new_image_subpath, 0, 1) . '/' . substr($new_image_subpath, 1, 1) . '/' . $new_image_subpath;
-	                    $new_image_path = '/home/tgroupco/public_html/clientpub/images/content-proizvod/' . $new_image_subpath;
+	                    $new_image_path = '../cms/clientpub/cms/images/proizvodi/' . $new_image_subpath;
 	                    if(!file_exists(dirname($new_image_path))) {
 	                        mkdir(dirname($new_image_path), 0777, true);
 	                    }
@@ -154,7 +154,7 @@ class ProizvodiController extends BaseFCMSController {
 	
 	                    $new_image_subpath = uniqid(rand (),true) . '.' . $new_image_ext;
 	                    $new_image_subpath = substr($new_image_subpath, 0, 1) . '/' . substr($new_image_subpath, 1, 1) . '/' . $new_image_subpath;
-	                    $new_image_path = '/home/tgroupco/public_html/clientpub/images/content-proizvod/' . $new_image_subpath;
+	                    $new_image_path = '../cms/clientpub/cms/images/proizvodi/' . $new_image_subpath;
 	                    if(!file_exists(dirname($new_image_path))) {
 	                        mkdir(dirname($new_image_path), 0777, true);
 	                    }
@@ -191,6 +191,24 @@ class ProizvodiController extends BaseFCMSController {
 	public function actionDelete($id) {
 		if (Yii::app()->request->isPostRequest) {
 			$this->loadModel($id)->delete();
+
+			/*Brisanje svih velicina vezanih za ovaj model*/
+			$Criteria = new CDbCriteria();
+			$Criteria->condition = "proizvod_id = $id";
+			$modeli = Modeli::model()->findAll($Criteria);
+			foreach ($modeli as $model) {
+				// brisanje velicina za sve modele ovog proizvoda iz tabele dimenzije
+				$Criteria = new CDbCriteria();
+				$Criteria->condition = "model_id = $model->id";
+				$modeliDimenzije = dimenzije::model()->findAll($Criteria);
+				foreach ($modeliDimenzije as $modelDimenzije) {
+					$modelDimenzije->delete();
+				}
+				// kraj
+			$model->delete();
+			}
+			/*Kraj*/
+
 			if (!isset($_GET['ajax'])) {
 				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 			}

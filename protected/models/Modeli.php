@@ -39,8 +39,8 @@ class Modeli extends CActiveRecord {
         $state = Yii::app()->request->getPost(DstImageField::getStateHiddenFieldName('foto'));
         if($state == DstImageField::STATE_CHOSEN) {
             $image_path = CUploadedFile::getInstanceByName(DstImageField::getFileFieldName('foto'));
-            $image_path->saveAs('/home/tgroupco/public_html/clientpub/images/content-modeli/' . $image_path, false);
-            $image = Yii::app()->image->load('/home/tgroupco/public_html/clientpub/images/content-modeli/' . $image_path);
+            $image_path->saveAs('../cms/clientpub/cms/images/modeli/' . $image_path, false);
+            $image = Yii::app()->image->load('../cms/clientpub/cms/images/modeli/' . $image_path);
             $image->resize(532, 324)->quality(80);
             $image->save();  
         }
@@ -48,8 +48,8 @@ class Modeli extends CActiveRecord {
         $state_1 = Yii::app()->request->getPost(DstImageField::getStateHiddenFieldName('foto_banner'));
         if($state == DstImageField::STATE_CHOSEN) {
             $image_path_1 = CUploadedFile::getInstanceByName(DstImageField::getFileFieldName('foto_banner'));
-            $image_path_1->saveAs('/home/tgroupco/public_html/clientpub/images/content-modeli/' . $image_path_1, false);
-            $image_1 = Yii::app()->image->load('/home/tgroupco/public_html/clientpub/images/content-modeli/' . $image_path_1);
+            $image_path_1->saveAs('../cms/clientpub/cms/images/modeli/' . $image_path_1, false);
+            $image_1 = Yii::app()->image->load('../cms/clientpub/cms/images/modeli/' . $image_path_1);
             $image_1->resize(960, 400)->quality(80);
             $image_1->save();  
         }
@@ -61,9 +61,10 @@ class Modeli extends CActiveRecord {
     }
     
     protected function deleteImageFiles() {
-    	$fileNameToDelete = '/home/tgroupco/public_html/clientpub/images/content-modeli/'.$this->foto;
+    	$fileNameToDelete = '../cms/clientpub/cms/images/modeli/'.$this->foto;
         if(file_exists($fileNameToDelete)) {
-        unlink('/home/tgroupco/public_html/clientpub/images/content-modeli/'. $this->foto);
+        unlink('../cms/clientpub/cms/images/modeli/'. $this->foto);
+        unlink('../cms/clientpub/cms/images/modeli/'. $this->foto_banner);
         return true;
         } else {
         return true;

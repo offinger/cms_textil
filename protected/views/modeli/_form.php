@@ -15,7 +15,7 @@
     <p class="help-block">Polja sa <span class="required">*</span> su obavezna.</p>
     <?php
     //$putanja = "/Applications/MAMP/htdocs/private/tgroup/clientpub/images/content-modeli/";
-    $putanja = "/clientpub/images/content-modeli/";
+    $putanja = "/clientpub/cms/images/modeli/";
     ?>
     <?php echo $form->errorSummary($model); ?>
 
