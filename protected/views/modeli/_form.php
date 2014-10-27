@@ -105,6 +105,7 @@
     <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+
 <script type="text/javascript">
 <?php 
     if(Yii::app()->urlManager->parseUrl(Yii::app()->request) == "modeli/update"){
