@@ -997,3 +997,291 @@ Stack trace:
 REQUEST_URI=/control/img/made_on_mac.png
 HTTP_REFERER=http://cms.local:8888/
 ---
+2014/10/29 18:59:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/site/login
+---
+2014/10/29 18:59:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/site/login
+---
+2014/10/29 18:59:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:02:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:02:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:06:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:06:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:08:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:08:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:09:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:09:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:10:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:10:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:11:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:11:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:12:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:12:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:12:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:12:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:13:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:13:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:18:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:18:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:19:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:19:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:19:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/site/login
+---
+2014/10/29 19:19:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/site/login
+---
+2014/10/29 19:19:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/
+---
+2014/10/29 19:21:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/proizvodi/admin
+---
+2014/10/29 19:21:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/proizvodi/update/5
+---
+2014/10/29 19:21:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "clientpub/cms/images/proizvodi".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('clientpub/cms/i...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/clientpub/cms/images/proizvodi/
+HTTP_REFERER=http://cms.local:8888/proizvodi/update/5
+---
+2014/10/29 19:21:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "control/img/made_on_mac.png".' in /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/dbrain/frameworks/framework/web/CWebApplication.php(141): CWebApplication->runController('control/img/mad...')
+#1 /Applications/MAMP/htdocs/dbrain/frameworks/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/dbrain/cms/index.php(33): CApplication->run()
+#3 {main}
+REQUEST_URI=/control/img/made_on_mac.png
+HTTP_REFERER=http://cms.local:8888/proizvodi/admin
+---

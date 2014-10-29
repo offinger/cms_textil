@@ -416,7 +416,7 @@ function drawDeviceUsage(ids) {
   });
 }
 
-function drawTopPages(ids) {
+window.onload = function drawTopPages(ids) {
 
    var data = new gapi.analytics.report.Data({query: {
     'ids': 'ga:83509365',
@@ -438,11 +438,11 @@ function drawTopPages(ids) {
     // .once('error', function(response){})
     .execute();
 }
-
 </script>
 <div style="clear:both;"></div>
 
 <button onclick="drawTopPages();">Nikola</button>
+
 
 <?php 
 
