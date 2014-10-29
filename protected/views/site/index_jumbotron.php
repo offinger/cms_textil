@@ -408,16 +408,26 @@ function drawDeviceUsage(ids) {
 }
 
 function drawTopPages(ids) {
-  query({
+
+   var data = new gapi.analytics.report.Data({query: {
     'ids': 'ga:83509365',
     // 'ids': ids,
     'dimensions': 'ga:pagePath',
-    'metrics': 'ga:pageviews,ga:uniquePageviews,ga:timeOnPage,ga:bounces,ga:entrances,ga:exits',
+    // 'metrics': 'ga:pageviews,ga:uniquePageviews,ga:timeOnPage,ga:bounces,ga:entrances,ga:exits',
+    'metrics': 'ga:pageviews',
     'sort':'-ga:pageviews',
     'start-date': '2014-10-14',
     'end-date':'2014-10-28',
     'max-results':'10',
-  })
+  }});
+    data.once('success', function(response) { 
+      console.log(response.rows); 
+      for (i = 0; i < 10; i++) {
+          alert(response.rows[i]);
+      }
+    })
+    // .once('error', function(response){})
+    .execute();
 }
 
 </script>

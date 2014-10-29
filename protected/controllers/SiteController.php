@@ -246,4 +246,5 @@ class SiteController extends Controller {
             fb($mailer, "mailer OBJECT");
             $mailer->Send();
         }
+
 }
