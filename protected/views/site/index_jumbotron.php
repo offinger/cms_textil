@@ -36,6 +36,15 @@
   </section>
 
   <section style="width:48%; min-height:480px;" class="Component Chart Chart--chartjs">
+    <h3 class="Chart-title">Najposecenije stranice</h3>
+    <div id="stranice">
+       <table class="table" style="width:100%" id="mostvisited">
+        </table> 
+    </div>
+    <ol class="Legend">legenda</ol>
+  </section>
+
+  <section style="width:48%; min-height:480px;" class="Component Chart Chart--chartjs">
     <h3 class="Chart-title">This Week vs Last Week (Sessions)</h3>
     <div id="chart1"></div>
     <ol class="Legend" id="legend1"></ol>
@@ -421,9 +430,9 @@ function drawTopPages(ids) {
     'max-results':'10',
   }});
     data.once('success', function(response) { 
-      console.log(response.rows); 
-      for (i = 0; i < 10; i++) {
-          alert(response.rows[i]);
+      // console.log(response.rows); 
+      for (i = 0; i < 8; i++) {
+          document.getElementById('mostvisited').innerHTML += '<tr><td>'+response.rows[i][0]+'</td><td>'+response.rows[i][1]+'</td></tr>';
       }
     })
     // .once('error', function(response){})
