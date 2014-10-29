@@ -58,12 +58,6 @@
     <div id="chart4"></div>
     <ol class="Legend" id="legend4"></ol>
   </section>
-
-  <section style="width:48%; min-height:480px;" class="Component Chart Chart--chartjs">
-    <h3 class="Chart-title">Top pages</h3>
-    <div id="chart5"></div>
-    <ol class="Legend" id="legend5"></ol>
-  </section>
 </main>
 
 <!-- This code snippet loads the Embed API. Do not modify! -->
@@ -414,38 +408,38 @@ function drawDeviceUsage(ids) {
 }
 
 function drawTopPages(ids) {
-  query({
-    'ids': ids,
-    'dimensions': 'ga:deviceCategory',
-    'metrics': 'ga:sessions',
-  })
-  .then(function(response) {
 
-    var data = [];
-    var colors = ['#F7464A','#E2EAE9','#D4CCC5','#949FB1','#4D5360'].reverse();
-
-    response.rows.forEach(function(row, i) {
-      data.push({
-        label: row[0],
-        value: +row[1],
-        color: colors[i]
-      });
-    });
-
-    new Chart(makeCanvas('chart5')).PolarArea(data, {
-      animationSteps: 60,
-      animationEasing: 'easeInOutQuart'
-    });
-
-    setLegend('legend5', data);
-  });
+   var data = new gapi.analytics.report.Data({query: {
+    'ids': 'ga:83509365',
+    // 'ids': ids,
+    'dimensions': 'ga:pagePath',
+    // 'metrics': 'ga:pageviews,ga:uniquePageviews,ga:timeOnPage,ga:bounces,ga:entrances,ga:exits',
+    'metrics': 'ga:pageviews',
+    'sort':'-ga:pageviews',
+    'start-date': '2014-10-14',
+    'end-date':'2014-10-28',
+    'max-results':'10',
+  }});
+    data.once('success', function(response) { 
+      console.log(response.rows); 
+      for (i = 0; i < 10; i++) {
+          alert(response.rows[i]);
+      }
+    })
+    // .once('error', function(response){})
+    .execute();
 }
 
 </script>
 <div style="clear:both;"></div>
 
+<button onclick="drawTopPages();">Nikola</button>
 
- <!-- <ga-auth clientid="79263804085-pk84nrtac6psa30al0bl4bu6etgnatqc.apps.googleusercontent.com"></ga-auth> -->
+<?php 
+
+	// $data = 
+	// $json_string = json_encode($data, JSON_PRETTY_PRINT);
+ ?>
 
 
 <!-- brisi odavde na dole -->
