@@ -723,7 +723,7 @@ function drawNewReturnVisitorsReload(ids) {
 <style type="text/css">
 	#newoldusers {
 	width		: 100%;
-	height		: 350px;
+	height		: 300px;
 	font-size	: 11px;
 }		
 </style>
