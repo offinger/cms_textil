@@ -12,6 +12,7 @@ return array(
     'import' => array(
         'application.models.*',
         'application.components.*',
+        'application.widgets.*',
         'application.extensions.bootstrap.components.*',
         'application.extensions.bootstrap.helpers.TbHtml',
         'application.vendors.FirePHPCore.FirePHP',
